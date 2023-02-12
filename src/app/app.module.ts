@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateArticleComponent } from './components/articles/create-article/create-article.component';
 import { FormsModule } from '@angular/forms';
+import { ListArticlesComponent } from './components/articles/list-articles/list-articles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CreateArticleComponent
+    CreateArticleComponent,
+    ListArticlesComponent
   ],
   imports: [
     BrowserModule,
