@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-article.component.css']
 })
 export class CreateArticleComponent {
-
+  article = {
+    id: '1',
+    title: 'My Article',
+    body: 'My body'
+  }
 }

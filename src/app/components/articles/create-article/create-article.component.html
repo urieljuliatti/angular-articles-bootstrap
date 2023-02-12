@@ -2,12 +2,35 @@
   <form>
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
-      <input type="text" class="form-control" id="title">
+      <input type="text"
+            name="title"
+            class="form-control"
+            id="title"
+            placeholder="Place your title"
+            [value]="article.title">
     </div>
     <div class="mb-3">
       <label for="body" class="form-label">Body</label>
-      <textarea class="form-control" id="body" rows="3"></textarea>
+      <textarea class="form-control"
+            name="body"
+            id="body"
+            rows="3"
+            placeholder="Place your description"
+            [value]="article.body"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</div>
+
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">Your Article Preview</h2>
+  <div class="row g-4 py-5">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+      <h3 class="fs-2">{{ article.title }}</h3>
+      <p>{{ article.body }}</p>
+    </div>
+  </div>
 </div>
