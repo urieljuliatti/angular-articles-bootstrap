@@ -11,4 +11,9 @@ export class CreateArticleComponent {
     title: 'My Article',
     body: 'My body'
   }
+
+  onSubmit()
+  {
+    alert( 'Create Article')
+  }
 }
