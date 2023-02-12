@@ -1,11 +1,24 @@
 <div class="container px-4 py-5" id="featured-3">
-  <h2 class="pb-2 border-bottom">Articles</h2>
+  <h2 class="pb-1 border-bottom">Articles</h2>
   <div class="row d-flex justify-content-center">
-    <button type="submit" routerLink="/createArticle" class="btn btn-primary">Create Article</button>
+    <button type="submit" routerLink="/createArticle" class="btn btn-primary">Create an article</button>
   </div>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  <hr style="padding:0; margin: 7px 0;"/>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" *ngIf="articlesList.length > 0, else noArticles">
     <div *ngFor="let article of articlesList">
       <app-article [article]="article"></app-article>
     </div>
   </div>
 </div>
+
+<ng-template #noArticles>
+  <div class="container row py-5 d-flex justify-content-center">
+    <div class="card justify-content-center" style=" width: 18rem;">
+      <div class="card-body justify-content-center">
+        <h5 class="card-title">No Articles!</h5>
+        <p class="card-text">No articles were found.</p>
+        <button type="submit" routerLink="/createArticle" class="btn btn-primary">Create your first article</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
