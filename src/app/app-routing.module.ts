@@ -5,6 +5,11 @@ import { ListArticlesComponent } from './components/articles/list-articles/list-
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'listArticles',
+    pathMatch: 'full'
+  },
+  {
     path: 'createArticle',
     component: CreateArticleComponent
   },

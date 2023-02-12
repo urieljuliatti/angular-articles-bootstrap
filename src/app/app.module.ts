@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CreateArticleComponent } from './components/articles/create-article/create-article.component';
 import { FormsModule } from '@angular/forms';
 import { ListArticlesComponent } from './components/articles/list-articles/list-articles.component';
+import { ArticleComponent } from './components/articles/article/article.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListArticlesComponent } from './components/articles/list-articles/list-
     HeaderComponent,
     FooterComponent,
     CreateArticleComponent,
-    ListArticlesComponent
+    ListArticlesComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
