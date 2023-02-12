@@ -15,6 +15,8 @@ export class ListArticlesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.list();
+    this.service.list().subscribe((articlesList) => {
+      this.articlesList = articlesList;
+    });
   }
 }

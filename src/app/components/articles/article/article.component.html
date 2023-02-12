@@ -1,8 +1,7 @@
 <div class="feature col" style="text-align: center;">
   <i class="bi bi-book-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
   <h3 class="fs-2">{{article.title}}</h3>
-  <p>{{article.body}}</p>
-
+  <p>{{article.body | slice:0:100}}...</p>
   <a href="#">
     <i class="bi bi-box-arrow-up-right" style="font-size: 2rem; color: cornflowerblue;"></i>
   </a>
