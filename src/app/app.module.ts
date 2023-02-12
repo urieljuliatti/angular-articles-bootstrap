@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ListArticlesComponent } from './components/articles/list-articles/list-articles.component';
 import { ArticleComponent } from './components/articles/article/article.component';
 import { HttpClientModule  } from '@angular/common/http';
-import { DeleteArticleComponent } from './components/article/delete-article/delete-article.component';
+import { DeleteArticleComponent } from './components/articles/delete-article/delete-article.component';
 
 @NgModule({
   declarations: [

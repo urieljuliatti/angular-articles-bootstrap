@@ -19,4 +19,15 @@ export class ArticleService {
   create(article: Article): Observable<Article>{
     return this.http.post<Article>(this.API, article)
   }
+
+  delete(id: number): Observable<Article> {
+    const url = `${this.API}/${id}`
+    return this.http.delete<Article>(url)
+  }
+
+  getArticleById(id: number): Observable<Article>{
+    const url = `${this.API}/${id}`
+    return this.http.get<Article>(url)
+  }
+
 }
