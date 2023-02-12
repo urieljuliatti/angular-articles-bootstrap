@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-article',
@@ -7,7 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ArticleComponent {
 
-  @Input() article = {
+  @Input() article: Article = {
+    id: 0,
     title: '',
     body: ''
   }

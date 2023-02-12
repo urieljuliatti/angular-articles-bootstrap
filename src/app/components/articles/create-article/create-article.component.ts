@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-create-article',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-article.component.css']
 })
 export class CreateArticleComponent {
-  article = {
-    id: '1',
+  article: Article = {
+    id: 0,
     title: 'My Article',
     body: 'My body'
   }
