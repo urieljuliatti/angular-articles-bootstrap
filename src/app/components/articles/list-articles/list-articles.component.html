@@ -4,32 +4,8 @@
     <button type="submit" routerLink="/createArticle" class="btn btn-primary">Create Article</button>
   </div>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-    <div class="feature col">
-      <i class="bi bi-book-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <h3 class="fs-2">Featured title</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <i class="bi bi-eye" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <a href="#" class="icon-link d-flex align-items-center">
-        Read Article
-      </a>
-    </div>
-    <div class="feature col">
-      <i class="bi bi-book-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <h3 class="fs-2">Featured title</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <i class="bi bi-eye" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <a href="#" class="icon-link d-flex align-items-center">
-        Read Article
-      </a>
-    </div>
-    <div class="feature col">
-      <i class="bi bi-book-fill" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <h3 class="fs-2">Featured title</h3>
-      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-      <i class="bi bi-eye" style="font-size: 2rem; color: cornflowerblue;"></i>
-      <a href="#" class="icon-link d-flex align-items-center">
-        Read Article
-      </a>
+    <div *ngFor="let article of articlesList">
+      <app-article [article]="article"></app-article>
     </div>
   </div>
 </div>
