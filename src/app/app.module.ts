@@ -9,6 +9,7 @@ import { CreateArticleComponent } from './components/articles/create-article/cre
 import { FormsModule } from '@angular/forms';
 import { ListArticlesComponent } from './components/articles/list-articles/list-articles.component';
 import { ArticleComponent } from './components/articles/article/article.component';
+import { HttpClientModule  } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ArticleComponent } from './components/articles/article/article.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
