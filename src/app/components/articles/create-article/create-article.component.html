@@ -7,7 +7,7 @@
             class="form-control"
             id="title"
             placeholder="Place your title"
-            [value]="article.title">
+            [(ngModel)]="article.title">
     </div>
     <div class="mb-3">
       <label for="body" class="form-label">Body</label>
@@ -16,7 +16,7 @@
             id="body"
             rows="3"
             placeholder="Place your description"
-            [value]="article.body"></textarea>
+            [(ngModel)]="article.body"></textarea>
     </div>
     <button type="submit" (click)="onSubmit()" class="btn btn-primary">Submit</button> |
     <button type="submit" class="btn btn-danger">Cancel</button>
