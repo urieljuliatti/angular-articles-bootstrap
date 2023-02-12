@@ -15,4 +15,8 @@ export class ArticleService {
   list():Observable<Article[]> {
     return this.http.get<Article[]>(this.API)
   }
+
+  create(article: Article): Observable<Article>{
+    return this.http.post<Article>(this.API, article)
+  }
 }
